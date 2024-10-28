@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RootS Gallery</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="bg">
         <div class="page1"></div>
         <div class="page2"></div>
         <div class="page3"></div>
-        <div class="page4"></div>
+        <div class="page4">
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Senha</label>
+                        </div>
+                        <div class="remenber-forgot">
+                            <label><input type="checkbox">Lembrar de mim</label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>Não tem uma conta ainda? <a href="#" class="register-link">Crie Aqui</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <h2>Registre-se</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" required>
+                            <label>Nome de usuário</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Senha</label>
+                        </div>
+                        <div class="remenber-forgot">
+                            <label><input type="checkbox">Eu aceito os termos e condições</label>
+                        </div>
+                        <button type="submit" class="btn">Registrar</button>
+                        <div class="login-register">
+                            <p>Já tem uma conta? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button class="btnLogin-popup">Login</button>
+        </div>
+
     </div>
+
+    <script src="script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
