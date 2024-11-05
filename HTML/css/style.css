@@ -67,6 +67,11 @@ div .page4 {
     color: #162938;
 }
 
+.quadro{
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper {
     position: relative;
     width: 400px;
