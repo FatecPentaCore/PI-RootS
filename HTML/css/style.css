@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body,
@@ -48,6 +49,9 @@ div .page4 {
 }
 
 .btnLogin-popup {
+    position: absolute;
+    top: 90%;
+    left: 45%;
     width: 130px;
     height: 50px;
     background: transparent;
@@ -62,12 +66,12 @@ div .page4 {
     transition: .5s;
 }
 
-.navigation .btnLogin-popup:hover {
+.btnLogin-popup:hover {
     background: #fff;
     color: #162938;
 }
 
-.quadro{
+.quadro {
     display: flex;
     justify-content: center;
 }
@@ -244,45 +248,76 @@ div .page4 {
 }
 
 
-
-
-
 /*Style da Home */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
-#divBusca{
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:300px;
-    height:32px;
-  }
-  
-  #txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:191px;
-  }
-  
-  #btnBusca{
-    border:none;
-    float:left;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-weight:bold;
-    background:#5F9EA0;
-  }
-  
-  #divBusca img{
-    float:left;
-  }
+.Projectname {
+    margin-top: 40px;
+    font-size: 4em;
+}
 
+.siteNavi {
+    margin-top: 90px;
+}
+
+.siteNavi a {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 1.5em;
+
+}
+
+#divBusca {
+    margin-top: 10px;
+    margin-right: 18px;
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    border-radius: 10px;
+    width: 300px;
+    height: 36px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+
+#btnBusca {
+    margin-left: 5px;
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 0 3px 3px 0;
+    width: 70px;
+    font-weight: bold;
+    background: #5F9EA0;
+}
+
+#divBusca img {
+    float: left;
+}
+
+.btn2 {
+    margin-left: 20px;
+    width: 40%;
+    height: 40px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
