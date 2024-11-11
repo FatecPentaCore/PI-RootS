@@ -25,7 +25,7 @@ div .page4 {
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -51,7 +51,7 @@ div .page4 {
 .btnLogin-popup {
     position: absolute;
     top: 90%;
-    left: 45%;
+    left: 43%;
     width: 130px;
     height: 50px;
     background: transparent;
@@ -270,7 +270,6 @@ header {
     text-decoration: none;
     margin-left: 100px;
     font-size: 1.5em;
-
 }
 
 #divBusca {
@@ -320,4 +319,18 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 500;
+}
+
+.exibicao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.descricao{
+    margin-left: 20px;
+}
+
+.chatbox{
+    margin-right: 20px;
 }
