@@ -13,9 +13,11 @@ loginlink.addEventListener('click', () => {
 });
 
 btnPopup.addEventListener('click', () => {
+    btnPopup.style.display = "none";
     wrapper.classList.add('active-popup');
 });
 
 iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
+    btnPopup.style.display = "block";
 });
