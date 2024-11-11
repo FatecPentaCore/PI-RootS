@@ -256,6 +256,11 @@ header {
     margin-left: 15px;
 }
 
+.home {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
 .Projectname {
     margin-top: 40px;
     font-size: 4em;
@@ -266,11 +271,35 @@ header {
 }
 
 .siteNavi a {
-    text-align: center;
-    text-decoration: none;
-    margin-left: 100px;
+    position: relative;
     font-size: 1.5em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 90px;
+    margin-right: 200px;
 }
+
+.siteNavi a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.siteNavi a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
 
 #divBusca {
     margin-top: 10px;
@@ -316,21 +345,83 @@ header {
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #fff;
     font-weight: 500;
+    cursor: pointer;
 }
 
-.exibicao{
+.descricao {
+    width: 25%;
+    border: #162938 solid 2px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.chatbox {
+    border: #162938 solid 2px;
+    text-align: center;
+    width: 25%;
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60%;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+.quadro {
+    flex: none;
+    width: 300px;
+    height: 100%;
+    margin: 0 15px;
+    background-color: #ccc;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro.active {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.texto-vertical {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    white-space: pre-wrap;
+    line-height: 2;
+    text-align: center;
+}
+
+.exibicao {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-.descricao{
+.descricao {
     margin-left: 20px;
 }
 
-.chatbox{
+.chatbox {
     margin-right: 20px;
 }
