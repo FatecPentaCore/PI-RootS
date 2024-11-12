@@ -71,7 +71,7 @@ div .page4 {
     color: #162938;
 }
 
-.quadro {
+.alinhamento {
     display: flex;
     justify-content: center;
 }
@@ -276,8 +276,8 @@ header {
     color: #000000;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 90px;
-    margin-right: 200px;
+    margin-left: 60px;
+    margin-right: 100px;
 }
 
 .siteNavi a::after {
