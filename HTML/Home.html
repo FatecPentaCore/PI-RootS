@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roots Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body class="home">
@@ -74,10 +77,38 @@
                 </div>
             </div>
         </div>
-        <div class="chatbox">Chatbox</div>
+            <div id="body">
+
+                <div id="chat-circle" class="btn3 btn-raised">
+                  <div id="chat-overlay"></div>
+                  <i class="material-icons">chat</i>
+                </div>
+              
+                <div class="chat-box">
+                  <div class="chat-box-header">
+                    ChatBot
+                    <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+                  </div>
+                  <div class="chat-box-body">
+                    <div class="chat-box-overlay">
+                    </div>
+                    <div class="chat-logs">
+              
+                    </div>
+                    <!--chat-log -->
+                  </div>
+                  <div class="chat-input">
+                    <form>
+                      <input type="text" id="chat-input" placeholder="Send a message..." />
+                      <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+                    </form>
+                  </div>
+                </div>
+              
+              </div>
     </section>
 
-    <script src="/HTML/script/script.js"></script>
+    <script src="/HTML/script/scripthome.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
