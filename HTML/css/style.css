@@ -247,6 +247,33 @@ div .page4 {
     text-decoration: underline;
 }
 
+.Home{
+    position: absolute;
+    top: 86%;
+    left: 20%;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.Home a{
+    text-decoration: none;
+    color: #162938;
+}
+
+.Home:hover{
+    background: #fff;
+    color: #162938;
+}
 
 /*Style da Home */
 header {
