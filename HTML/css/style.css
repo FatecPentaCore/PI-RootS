@@ -278,6 +278,11 @@ div .page4 {
     color: #162938;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
 /*Style da Home */
 header {
     display: flex;
@@ -906,4 +911,149 @@ p {
 
 .chatbox {
     margin-right: 20px;
+}
+
+/*style registro de arte */
+
+#ArtRegister {
+    display: flex;
+    flex-direction: column;
+    margin-left: 59px;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: auto;
+}
+
+#ArtRegister h2 {
+    margin-bottom: 20px;
+}
+
+.containerReg {
+    display: flex;
+    width: 100%;
+    background-color: #3589c9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+}
+
+.upload-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.upload-section label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #573107;
+    font-size: 1.5em;
+}
+
+.form-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.form-section input[type="text"],
+.form-section textarea,
+.form-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group select {
+    width: 30%;
+    height: 38px;
+    padding: 0;
+    position: absolute;
+    right: 40px;
+    bottom: 44%;
+}
+
+
+.tags-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tags-section input[type="text"] {
+    flex: 1;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.register-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #444;
+}
+
+.slider-section {
+    position: absolute;
+    width: 30%;
+    right: 20%;
+    bottom: 38%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.slider-section label {
+    font-size: 14px;
+    color: #333;
+}
+
+.slider-section input[type="range"] {
+    width: 50%;
+    margin: 5px 0;
+}
+
+.slider-values {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: #000000;
 }
