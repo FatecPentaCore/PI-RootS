@@ -115,7 +115,7 @@ $(function () {
 });
 
 let crossWords = {
-  0: ["Roots-", "Origin", "Art", "--Here"],
+  0: ["Roots-", "Origin", "-Art", "--Here"],
   1: ["", "See", "Others", "--Root"],
   2: ["Create", "-Yours", "Vision", "--Here"],
   3: ["Became", "---", "Roots", ""]
@@ -143,10 +143,10 @@ Object.values(crossWords).forEach((group) => {
 const scrollBox = document.getElementById("scrollBox");
 
 function autoScroll() {
-  scrollBox.scrollLeft += 3; // Ajuste a velocidade aumentando o valor
+  scrollBox.scrollLeft += 4; // Ajuste a velocidade aumentando o valor
 
   if (scrollBox.scrollLeft >= scrollBox.scrollWidth - scrollBox.clientWidth) {
-    scrollBox.scrollLeft = -1; // Reseta ao fim para loop contínuo
+    scrollBox.scrollLeft = 0; // Reseta ao fim para loop contínuo
   }
 }
 
