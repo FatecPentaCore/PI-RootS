@@ -139,15 +139,17 @@ Object.values(crossWords).forEach((group) => {
   container.appendChild(groupDiv);
 });
 
-
 const scrollBox = document.getElementById("scrollBox");
 
 function autoScroll() {
-  scrollBox.scrollLeft += 4; // Ajuste a velocidade aumentando o valor
+  // Incrementa o scroll à esquerda em pixels para o movimento
+  scrollBox.scrollLeft += 4;
 
-  if (scrollBox.scrollLeft >= scrollBox.scrollWidth - scrollBox.clientWidth) {
-    scrollBox.scrollLeft = 0; // Reseta ao fim para loop contínuo
+  // Quando o scroll chega ao fim, redefine para o início
+  if (scrollBox.scrollLeft >= scrollBox.scrollWidth - scrollBox.clientWidth ) {
+    scrollBox.scrollLeft = 0;
   }
 }
 
 setInterval(autoScroll, 20); // Controla a velocidade do scroll
+
