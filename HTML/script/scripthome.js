@@ -143,10 +143,10 @@ const scrollBox = document.getElementById("scrollBox");
 
 function autoScroll() {
   // Incrementa o scroll à esquerda em pixels para o movimento
-  scrollBox.scrollLeft += 4;
+  scrollBox.scrollLeft += 2;
 
   // Quando o scroll chega ao fim, redefine para o início
-  if (scrollBox.scrollLeft >= scrollBox.scrollWidth - scrollBox.clientWidth ) {
+  if (scrollBox.scrollLeft >= scrollBox.scrollWidth - scrollBox.clientWidth) {
     scrollBox.scrollLeft = 0;
   }
 }
