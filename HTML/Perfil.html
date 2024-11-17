@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="home">
+    <header>
+        <div class="logoimg"><img src="img/ROOTS.png" width="175px" alt="logo roots"></div>
+        <h1 class="Projectname">RootS Gallery</h1>
+        <div id="btn">
+            <button class="btn2 Logout">Logout</button>
+            <button class="btn2 Perfil"><a href="Perfil.html">Perfil</a></button>
+            <div id="divBusca">
+                <img src="img/—Pngtree—search icon_4699282.png" width="30px" alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <button id="btnBusca">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <nav class="siteNavi">
+            <a href="Home.html">Home</a>
+            <a href="#">Galeria</a>
+            <a href="#">Tela de Exibição</a>
+            <a href="#">Códice</a>
+        </nav>
+    </div>
+
+    <div id="UserProfile">
+        <div class="containerProfile">
+            <div class="upload-sectionPerfil">
+                <img src="img/ROOTS.png" alt="Upload" class="avatar">
+                <input type="file" id="profile-pic" accept="image/*">
+                <div class="card-preview">
+                    <div class="card-img">
+                        <img src="img/blankCard2.webp" alt="Cartão de Crédito" id="cardImage">
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="form-section1">
+                    <input type="text" placeholder="Nome" id="userName" required>
+                    <input type="text" placeholder="CPF/CNPJ" id="userId" required>
+                </div>
+                <input type="text" placeholder="Endereço" id="userAddress" required>
+                <input type="text" placeholder="Email" id="userEmail" required>
+                <div class="ContainerCCard">
+                    <h3>Forma de Pagamento</h3>
+
+                    <div class="payment-preview">
+
+                        <div class="cartao">
+                            <div class="payment-methods">
+                                <input type="text" placeholder="Número do Cartão" id="cardNumber" required>
+                                <input type="text" placeholder="Nome no Cartão" id="cardName" required>
+                            </div>
+                            <div class="Ncard">
+                                <input type="text" placeholder="Data de Validade (MM/AA)" id="expiryDate" required>
+                                <input type="text" placeholder="Código de Segurança (CVV)" id="cvv" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="update-btn">Atualizar Perfil</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chat-circle" class="btn3 btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">chat</i>
+    </div>
+
+    <div class="chat-box">
+        <div class="chat-box-header">
+            ChatBot
+            <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+        </div>
+        <div class="chat-box-body">
+            <div class="chat-box-overlay">
+            </div>
+            <div class="chat-logs"></div>
+        </div>
+        <div class="chat-input">
+            <form>
+                <input type="text" id="chat-input" placeholder="Envie uma mensagem..." />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/HTML/script/scripthome.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<footer id="footer">
+    &copy; Todos os direitos reservados ao grupo Penta Core - Fatec Marília
+</footer>
+
+</html>

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roots Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
-<body>
+<body class="home">
     <header>
         <div class="logoimg"><img src="img/ROOTS.png" width="175px" alt="logo roots"></div>
         <h1 class="Projectname">RootS Gallery</h1>
@@ -22,23 +25,248 @@
             </div>
         </div>
     </header>
+
     <nav class="siteNavi">
-        <a href="#" class="Galeria">Galeria</a>
-        <a href="#" class="RegistrarArte">Registrar Arte</a>
-        <a href="#" class="TelaDeExibicao">Tela de Exibição</a>
-        <a href="#" class="Codice">Códice</a>
+        <a href="#">Galeria</a>
+        <a href="Registro de Arte.html">Registrar Arte</a>
+        <a href="#">Tela de Exibição</a>
+        <a href="#">Códice</a>
     </nav>
+
     <section class="exibicao">
-        <div class="descricao">kdklkkkdkkd</div>
-        <div class="artes">sdfdfdffdf</div>
-        <div class="chatbox">olha eu aqui</div>
-    </section>
-    <section id="chatbox">
+        <div class="descricao">
+            <div class="content-wrap">
+                <div class="layer" id="wordGrid"></div>
+                <div class="side-section">
+                    <p>O Roots Gallery é uma plataforma digital onde colecionadores podem registrar e compartilhar suas
+                        obras, conectar-se com
+                        outros usuários e personalizar a visualização de suas coleções.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="scroll-container" id="scrollBox">
+                <!-- Quadro 1 -->
+                <div class="quadro" id="quadro1" data-nome="Vergine delle Rocce">
+                    <img src="img/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg" width="100%"
+                        alt="Vergine delle Rocce">
+                </div>
 
+                <!-- Quadro 2 -->
+                <div class="quadro" id="quadro2" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/Leonardo_da_Vinci_-_Virgin_and_Child_with_St_Anne_C2RMF_retouched.jpg" width="100%"
+                        alt="Virgin and Child with St'Anne">
+                </div>
+
+                <!-- Quadro 3 -->
+                <div class="quadro" id="quadro3" data-nome="Mona Liza">
+                    <img src="img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" width="100%"
+                        alt="Mona Liza">
+                </div>
+
+                <!-- Quadro 4 -->
+                <div class="quadro" id="quadro4" data-nome="Vergine delle Rocce">
+                    <img src="img/Eevee holo.webp" width="100%" alt="Pokemon TCG Eevee Holografic">
+                </div>
+
+                <!-- Quadro 5 -->
+                <div class="quadro" id="quadro5" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/homen-aranha.webp" width="100%" alt="Action figure Spider-Man">
+                </div>
+
+                <!-- Quadro 6 -->
+                <div class="quadro" id="quadro6" data-nome="Mona Liza">
+                    <img src="img/moeda 1rs.jpg" width="100%" alt="Moeda R$1.00">
+                </div>
+
+                <!-- Quadro 7 -->
+                <div class="quadro" id="quadro7" data-nome="Mona Liza">
+                    <img src="img/Michael jackson.webp" width="100%" alt="Michael Jackson vinil colection">
+                </div>
+
+                <!-- Quadro 8 -->
+                <div class="quadro" id="quadro8" data-nome="Mona Liza">
+                    <img src="img/moeda NatacaoParalimpica.jpg" width="100%" alt="Moeda R$1.00 natação">
+                </div>
+
+                <!-- Quadro 9 -->
+                <div class="quadro" id="quadro9" data-nome="Mona Liza">
+                    <img src="img/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg" width="100%"
+                        alt="Vergine delle Rocce">
+                </div>
+
+                <!-- Quadro 2 -->
+                <div class="quadro" id="quadro2" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/Leonardo_da_Vinci_-_Virgin_and_Child_with_St_Anne_C2RMF_retouched.jpg" width="100%"
+                        alt="Virgin and Child with St'Anne">
+                </div>
+
+                <!-- Quadro 3 -->
+                <div class="quadro" id="quadro3" data-nome="Mona Liza">
+                    <img src="img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" width="100%"
+                        alt="Mona Liza">
+                </div>
+
+                <!-- Quadro 4 -->
+                <div class="quadro" id="quadro4" data-nome="Vergine delle Rocce">
+                    <img src="img/Eevee holo.webp" width="100%" alt="Pokemon TCG Eevee Holografic">
+                </div>
+
+                <!-- Quadro 5 -->
+                <div class="quadro" id="quadro5" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/homen-aranha.webp" width="100%" alt="Action figure Spider-Man">
+                </div>
+
+                <!-- Quadro 6 -->
+                <div class="quadro" id="quadro6" data-nome="Mona Liza">
+                    <img src="img/moeda 1rs.jpg" width="100%" alt="Moeda R$1.00">
+                </div>
+
+                <!-- Quadro 7 -->
+                <div class="quadro" id="quadro7" data-nome="Mona Liza">
+                    <img src="img/Michael jackson.webp" width="100%" alt="Michael Jackson vinil colection">
+                </div>
+
+                <!-- Quadro 8 -->
+                <div class="quadro" id="quadro8" data-nome="Mona Liza">
+                    <img src="img/moeda NatacaoParalimpica.jpg" width="100%" alt="Moeda R$1.00 natação">
+                </div>
+
+                <!-- Quadro 9 -->
+                <div class="quadro" id="quadro9" data-nome="Mona Liza">
+                    <img src="img/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg" width="100%"
+                        alt="Vergine delle Rocce">
+                </div>
+
+                <!-- Quadro 2 -->
+                <div class="quadro" id="quadro2" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/Leonardo_da_Vinci_-_Virgin_and_Child_with_St_Anne_C2RMF_retouched.jpg" width="100%"
+                        alt="Virgin and Child with St'Anne">
+                </div>
+
+                <!-- Quadro 3 -->
+                <div class="quadro" id="quadro3" data-nome="Mona Liza">
+                    <img src="img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" width="100%"
+                        alt="Mona Liza">
+                </div>
+
+                <!-- Quadro 4 -->
+                <div class="quadro" id="quadro4" data-nome="Vergine delle Rocce">
+                    <img src="img/Eevee holo.webp" width="100%" alt="Pokemon TCG Eevee Holografic">
+                </div>
+
+                <!-- Quadro 5 -->
+                <div class="quadro" id="quadro5" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/homen-aranha.webp" width="100%" alt="Action figure Spider-Man">
+                </div>
+
+                <!-- Quadro 6 -->
+                <div class="quadro" id="quadro6" data-nome="Mona Liza">
+                    <img src="img/moeda 1rs.jpg" width="100%" alt="Moeda R$1.00">
+                </div>
+
+                <!-- Quadro 7 -->
+                <div class="quadro" id="quadro7" data-nome="Mona Liza">
+                    <img src="img/Michael jackson.webp" width="100%" alt="Michael Jackson vinil colection">
+                </div>
+
+                <!-- Quadro 8 -->
+                <div class="quadro" id="quadro8" data-nome="Mona Liza">
+                    <img src="img/moeda NatacaoParalimpica.jpg" width="100%" alt="Moeda R$1.00 natação">
+                </div>
+
+                <!-- Quadro 9 -->
+                <div class="quadro" id="quadro9" data-nome="Mona Liza">
+                    <img src="img/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg" width="100%"
+                        alt="Vergine delle Rocce">
+                </div>
+
+                <!-- Quadro 2 -->
+                <div class="quadro" id="quadro2" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/Leonardo_da_Vinci_-_Virgin_and_Child_with_St_Anne_C2RMF_retouched.jpg" width="100%"
+                        alt="Virgin and Child with St'Anne">
+                </div>
+
+                <!-- Quadro 3 -->
+                <div class="quadro" id="quadro3" data-nome="Mona Liza">
+                    <img src="img/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" width="100%"
+                        alt="Mona Liza">
+                </div>
+
+                <!-- Quadro 4 -->
+                <div class="quadro" id="quadro4" data-nome="Vergine delle Rocce">
+                    <img src="img/Eevee holo.webp" width="100%" alt="Pokemon TCG Eevee Holografic">
+                </div>
+
+                <!-- Quadro 5 -->
+                <div class="quadro" id="quadro5" data-nome="Virgin and Child with St'Anne">
+                    <img src="img/homen-aranha.webp" width="100%" alt="Action figure Spider-Man">
+                </div>
+
+                <!-- Quadro 6 -->
+                <div class="quadro" id="quadro6" data-nome="Mona Liza">
+                    <img src="img/moeda 1rs.jpg" width="100%" alt="Moeda R$1.00">
+                </div>
+
+                <!-- Quadro 7 -->
+                <div class="quadro" id="quadro7" data-nome="Mona Liza">
+                    <img src="img/Michael jackson.webp" width="100%" alt="Michael Jackson vinil colection">
+                </div>
+
+                <!-- Quadro 8 -->
+                <div class="quadro" id="quadro8" data-nome="Mona Liza">
+                    <img src="img/moeda NatacaoParalimpica.jpg" width="100%" alt="Moeda R$1.00 natação">
+                </div>
+
+                <!-- Quadro 9 -->
+                <div class="quadro" id="quadro9" data-nome="Mona Liza">
+                    <img src="img/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg" width="100%"
+                        alt="Vergine delle Rocce">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="body">
+
+            <div id="chat-circle" class="btn3 btn-raised">
+                <div id="chat-overlay"></div>
+                <i class="material-icons">chat</i>
+            </div>
+
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    ChatBot
+                    <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+                </div>
+                <div class="chat-box-body">
+                    <div class="chat-box-overlay">
+                    </div>
+                    <div class="chat-logs">
+
+                    </div>
+                    <!--chat-log -->
+                </div>
+                <div class="chat-input">
+                    <form>
+                        <input type="text" id="chat-input" placeholder="Send a message..." />
+                        <button type="submit" class="chat-submit" id="chat-submit"><i
+                                class="material-icons">send</i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+    <script src="/HTML/script/scripthome.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
-<footer id="rodape">
-
+<footer id="footer">
+    &copy; Todos os direitos reservados ao grupo Penta Core - Fatec Marília
 </footer>
 
 </html>
