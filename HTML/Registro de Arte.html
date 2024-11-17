@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body class="home">
+    <header>
+        <div class="logoimg"><img src="img/ROOTS.png" width="175px" alt="logo roots"></div>
+        <h1 class="Projectname">RootS Gallery</h1>
+        <div id="btn">
+            <button class="btn2 Logout">Logout</button>
+            <button class="btn2 Perfil"><a href="Perfil.html">Perfil</a></button>
+            <div id="divBusca">
+                <img src="img/—Pngtree—search icon_4699282.png" width="30px" alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <button id="btnBusca">Buscar</button>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav class="siteNavi">
+            <a href="Home.html">Home</a>
+            <a href="#">Galeria</a>
+            <a href="#">Tela de Exibição</a>
+            <a href="#">Códice</a>
+        </nav>
+    </div>
+
+    <div id="ArtRegister">
+        <h2>Registro de Arte:</h2>
+        <div class="containerReg">
+            <div class="upload-sectionReg">
+                <img src="/HTML/img/sprout.png" alt="Upload">
+                <label>UPLOAD</label>
+            </div>
+            <div class="form-sectionReg">
+                <input type="text" placeholder="Nome da Arte">
+                <textarea placeholder="Descrição"></textarea>
+
+                <div class="checkbox-groupReg">
+                    <input type="checkbox" id="galeria">
+                    <label for="galeria">Cadastrar em uma galeria já existente</label>
+                    <select>
+                        <option>Galeria AA</option>
+                        <option>Galeria BB</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-groupReg">
+                    <input type="checkbox" id="venda">
+                    <label for="venda">Disponível para venda?</label>
+                </div>
+
+                <div class="slider-sectionReg">
+                    <label for="valor">Valor</label>
+                    <input type="range" id="valor" name="valor" min="0" max="100" value="50">
+                    <div class="slider-valuesReg">
+                        <span>$0</span>
+                        <span>$10000</span>
+                    </div>
+                </div>
+
+                <div class="checkbox-groupReg">
+                    <input type="checkbox" id="privada">
+                    <label for="privada">Visualização Privada</label>
+                    <small>Somente você poderá ver a arte</small>
+                </div>
+
+                <div class="checkbox-groupReg">
+                    <input type="checkbox" id="digital">
+                    <label for="digital">Digital</label>
+                </div>
+
+
+                <div class="tags-sectionReg">
+                    <input type="text" placeholder="Tags">
+                    <button type="button">Add Tag</button>
+                </div>
+
+                <div class="tagReg">Quadro</div>
+                <div class="tagReg">Pintura</div>
+                <div class="tagReg">Ano 1885</div>
+
+                <button class="register-btnReg">REGISTRAR</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+    <div id="body">
+
+        <div id="chat-circle" class="btn3 btn-raised">
+            <div id="chat-overlay"></div>
+            <i class="material-icons">chat</i>
+        </div>
+
+        <div class="chat-box">
+            <div class="chat-box-header">
+                ChatBot
+                <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">
+                </div>
+                <div class="chat-logs">
+
+                </div>
+                <!--chat-log -->
+            </div>
+            <div class="chat-input">
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..." />
+                    <button type="submit" class="chat-submit" id="chat-submit"><i
+                            class="material-icons">send</i></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <script src="/HTML/script/scripthome.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<footer id="footer">
+    &copy; Todos os direitos reservados ao grupo Penta Core - Fatec Marília
+</footer>
+
+</html>
