@@ -59,9 +59,11 @@ div .page2 {
 }
 
 .textoAbout {
-    margin-top: 300px;
+    height: 40%;
+    text-align: left;
+    margin-top: 210px;
     margin-left: 250px;
-    width: 100%;
+    width: 80%;
     font-size: 1.5em;
 }
 
@@ -79,9 +81,10 @@ div .page3 {
 }
 
 .textoProposito {
-    margin-top: 340px;
+    text-align: left;
+    margin-top: 280px;
     margin-left: 250px;
-    width: 100%;
+    width: 80%;
     font-size: 1.5em;
 }
 
